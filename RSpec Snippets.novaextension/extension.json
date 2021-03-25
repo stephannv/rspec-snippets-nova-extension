@@ -1,0 +1,17 @@
+{
+    "identifier": "dev.stephann.rspec-snippets",
+    "name": "RSpec Snippets",
+    "organization": "Stephann",
+    "description": "RSpec snippets.",
+    "version": "2021.03.25",
+    "categories": ["clips"],
+    "activationEvents": [
+        "onLanguage:ruby"
+    ],
+    "entitlements": {
+        "files": "readwrite"
+    },
+    "bugs": "https://github.com/stephannv/rspec-snippets-nova-extension/issues",
+    "homepage": "https://github.com/stephannv/rspec-snippets-nova-extension",
+    "repository": "https://github.com/stephannv/rspec-snippets-nova-extension/issues"
+}

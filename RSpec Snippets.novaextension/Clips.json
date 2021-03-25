@@ -1,0 +1,104 @@
+{
+  "clips": [
+    {
+      "content": "$AUTHOR_NAME",
+      "name": "User Signature",
+      "trigger": "usersig"
+    },
+    {
+      "children": [
+        {
+          "content": "describe '${:description}' do\n  ${:content}\nend",
+          "name": "describe",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "describe"
+        },
+        {
+          "content": "let(:${:name}) { ${:content} }",
+          "name": "let inline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "let"
+        },
+        {
+          "content": "let(:${:name}) do\n  ${:content}\nend",
+          "name": "let multiline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "letmultiline"
+        },
+        {
+          "content": "context '${:context}' do\n  ${:content}\nend",
+          "name": "context",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "context"
+        },
+        {
+          "content": "it '${:context}' do\n  ${:content}\nend",
+          "name": "it multiline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "it"
+        },
+        {
+          "content": "it { ${:content} }",
+          "name": "it inline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "itinline"
+        },
+        {
+          "content": "before do\n  ${:content}\nend",
+          "name": "before each multiline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "before"
+        },
+        {
+          "content": "before { ${:content} }",
+          "name": "before each inline",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "beforeinline"
+        },
+        {
+          "content": "before(:all) do\n  ${:content}\nend",
+          "name": "before all",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "beforeall"
+        },
+        {
+          "content": "after(:all) do\n  ${:content}\nend",
+          "name": "after all",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "afterall"
+        },
+        {
+          "content": "expect(${:value}).to ${:matcher}",
+          "name": "expect to",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "expect"
+        },
+        {
+          "content": "expect(${:value}).to_not ${:matcher}",
+          "name": "expect to not",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "expectnot"
+        },
+        {
+          "content": "allow(${:thing}).to receive(:${:message})",
+          "name": "allow to receive",
+          "scope": "editor",
+          "syntax": "ruby",
+          "trigger": "allow"
+        }
+      ]
+    }
+  ]
+}
